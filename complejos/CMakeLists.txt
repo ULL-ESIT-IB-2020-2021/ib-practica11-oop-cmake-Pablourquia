@@ -20,13 +20,13 @@
 cmake_minimum_required(VERSION 3.1)  # Mandatory
 
 # set the project name 
-project(fecha                # Mandatory
+project(complejos                # Mandatory
     VERSION 1.0
-    DESCRIPTION 
+    DESCRIPTION
     LANGUAGES CXX)
 
 # specify the C++ standard
-set(CMAKE_CXX_STANDARD 14) 						# Use c++14
+set(CMAKE_CXX_STANDARD 14)                                              # Use c++14
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # tell cmake to output binaries here:
@@ -43,15 +43,15 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 
 
 
-add_executable(fecha
-    src/fechas.funciones.h
-    src/fechas.funciones.cc
-    src/fechas.cc)
+add_executable(complejos
+    src/complejos.funciones.h
+    src/complejos.funciones.cc
+    src/complejos.cc)
 
 # Add expected compiler features to a target.
-target_compile_features(fecha PRIVATE cxx_std_14)
+target_compile_features(complejos PRIVATE cxx_std_14)
 
 # Add compile options to a target.
-target_compile_options(fecha PRIVATE -Wall -Wextra -Wpedantic)
+target_compile_options(complejos PRIVATE -Wall -Wextra -Wpedantic)
 
 

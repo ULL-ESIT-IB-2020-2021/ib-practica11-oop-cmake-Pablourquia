@@ -4,7 +4,7 @@
  * Grado en Ingeniería Informática
  * Informática Básica
  * 
- * @file racional.cc
+ * @file racional.funciones.cc
  * @author Pablo Urquía Adrián alu0101398327@ull.edu.es
  * @date 28 de diciembre de 2020
  * @brief El programa opera con numeros racional usando clases
@@ -21,7 +21,6 @@
 #include <sstream>
 #include <algorithm>
 #include "racional.funciones.h"
-
 
 Racional add (Racional racional1, Racional racional2){
   int new_denominator = racional1.getDenominator() * racional2.getDenominator();
@@ -68,17 +67,3 @@ Racional comparation (Racional racional1, Racional racional2){
     std::cout << "Son iguales" << std::endl;
   }
 }
-
-
-
-
-
-int main (int argc, char* argv[]){
-
-  std::string inputfile = (argv[1]);
-  std::string outputfile = (argv[2]);
-  Racional racional1 ();
-  racional1.separateNumbers(inputfile);
-
-}
-
