@@ -1,17 +1,3 @@
-/** 
- * Universidad de La Laguna
- * Escuela Superior de Ingeniería y Tecnología
- * Grado en Ingeniería Informática
- * Informática Básica
- * 
- * @file racional.funciones.cc
- * @author Pablo Urquía Adrián alu0101398327@ull.edu.es
- * @date 28 de diciembre de 2020
- * @brief El programa opera con numeros racional usando clases
- * @bug No hay bugs conocidos
- * 
- */
-
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -66,4 +52,22 @@ Racional comparation (Racional racional1, Racional racional2){
   else{
     std::cout << "Son iguales" << std::endl;
   }
+
+}
+
+Racional media_total (Racional racional1, Racional racional2){
+  float racional1_new = racional1.getNumerator() / racional1.getDenominator();
+  float racional2_new = racional2.getNumerator() / racional2.getDenominator();
+  float media = (racional1_new + racional2_new) / 2;
+  return media;
+}
+
+Racional media_numerator (Racional racional1, Racional racional2){
+    float racional_numerator = (racional1.getNumerator() + racional2.getNumerator()) / 2;
+    return racional_numerator;
+}
+
+Racional media_denominator (Racional racional1, Racional racional2){
+    float racional_denominator = (racional1.getDenominator() + racional2.getDenominator()) / 2;
+    return racional_denominator;
 }
